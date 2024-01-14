@@ -4,7 +4,8 @@ const webpack = require('webpack');
 module.exports = {
     entry: path.resolve(__dirname, './src/index.js'),
     module: {
-        rules: [{
+        rules: [
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
@@ -18,7 +19,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            implementation: require('sass')
+                            implementation: require('sass'),
                         },
                     },
                 ],
@@ -44,4 +45,5 @@ module.exports = {
         contentBase: path.resolve(__dirname, './dist'),
         hot: true,
     },
+    mode: 'production',
 };
