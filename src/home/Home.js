@@ -1,5 +1,4 @@
 import './home.scss';
-import gif from './apple-animation.gif';
 
 export default function Home() {
     return (
@@ -12,9 +11,6 @@ export default function Home() {
             <p>
                 <a href="https://www.apple.com/ipad-pro/">An example of what I'm talking about.</a>
             </p>
-            <div>
-                <img className="gif" src={gif} />
-            </div>
             <p>
                 I was mystified and needed to know how they did it. I managed to reverse engineer something similar by
                 poking around their page.
