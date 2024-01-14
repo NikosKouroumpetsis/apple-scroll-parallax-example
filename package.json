@@ -6,7 +6,7 @@
     "scripts": {
         "start": "webpack serve --config ./webpack.config.js --mode development",
         "test": "echo \"No test specified\" && exit 0",
-        "webpack": "./node_modules/.bin/webpack --config=./webpack.config.js"
+        "webpack": "./node_modules/.bin/webpack --config=./webpack.config.js --mode production --openssl-legacy-provider"
     },
     "keywords": [],
     "author": "Nick Kouroumpetsis",
